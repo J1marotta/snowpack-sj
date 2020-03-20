@@ -4,8 +4,9 @@
   "description": "Learning snowpack",
   "main": "index.js",
   "scripts": {
+    "prepare": "npx snowpack --include \"src/**/*.js\"",
     "test": "npm run test",
-    "dev": "concurrently --k \"babel src --out-dir lib --watch\" \"npx live-server\"" 
+    "dev": "concurrently --k \"babel src --out-dir lib --watch\" \"npx live-server\""
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,11 @@
     "live-server": "^1.2.1",
     "react": "npm:@pika/react@^16.13.1",
     "react-dom": "npm:@pika/react-dom@^16.13.1",
-    "snowpack": "^1.6.0"
+    "snowpack": "^1.6.0",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "babel-plugin-styled-components": "^1.10.7"
   }
 }
