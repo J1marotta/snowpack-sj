@@ -1,0 +1,30 @@
+{
+  "name": "swipe",
+  "version": "1.0.0",
+  "description": "Learning snowpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "dev": "concurrently --k \"babel src --out-dir lib --watch\" \"npx live-server\"" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/J1marotta/snowpack-sj.git"
+  },
+  "author": "James Marotta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J1marotta/snowpack-sj/issues"
+  },
+  "homepage": "https://github.com/J1marotta/snowpack-sj#readme",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "concurrently": "^5.1.0",
+    "live-server": "^1.2.1",
+    "react": "npm:@pika/react@^16.13.1",
+    "react-dom": "npm:@pika/react-dom@^16.13.1",
+    "snowpack": "^1.6.0"
+  }
+}
