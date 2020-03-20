@@ -2,7 +2,8 @@
   "plugins": [
     ["snowpack/assets/babel-plugin.js", {}],
     ["babel-plugin-styled-components", {}],
-    "@babel/proposal-object-rest-spread"
+    "@babel/proposal-object-rest-spread",
+    "@babel/plugin-syntax-dynamic-import"
 ],
   "presets": [
     "@babel/preset-react",

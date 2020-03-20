@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "npx snowpack --include \"src/**/*.js\"",
     "jest": "jest",
-    "dev": "concurrently --k \"babel src --out-dir lib --watch\" \"npx live-server\""
+    "dev": "concurrently --k \"babel src --out-dir lib --watch\" \"npx live-server --cors\""
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,10 @@
   "dependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
+    "axios": "^0.19.2",
     "babel-jest": "^25.1.0",
     "concurrently": "^5.1.0",
     "eslint": "^6.8.0",
